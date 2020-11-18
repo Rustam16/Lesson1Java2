@@ -5,9 +5,16 @@ import com.company.Color;
 
 public class Owl extends Bird {
 
-    public Owl(int age, double growth, Color color) {
-        super(age, growth, color);
+    private String owlGender;
 
+
+    public Owl(int age, double growth, Color color,Continent continent, String owlGender) {
+        super(age, growth, color,continent);
+        this.owlGender = owlGender;
+
+    }
+    public String getOwlGender() {
+        return owlGender;
     }
 
     public void  makeVoice(String voice , int num){
@@ -22,7 +29,9 @@ public class Owl extends Bird {
 
     public String printInfo() {
         return "age = "+ (super.getAge()+ ", Growth = " + super.getGrowth() + ", color = "
-                + super.getColor()+".");
+                + super.getColor()+", Continent = "+getContinent().getContinentName()+
+                ", continent Terrain ="+getContinent().getContinentTerrain() + ", Gender = "+ getOwlGender());
     }
+
 
 }

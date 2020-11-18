@@ -4,19 +4,20 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Owl owl = new Owl(5,1.2,Color.BLACK);
-        System.out.println("\n" +owl.printInfo()+"\n");
+        Continent continent = new Continent("America", "Сан Франциско");
+        Continent continent1 = new Continent("Южная Америка", "Сантияго");
+        Continent continent3 = new Continent("Африка", "Каир");
+        Owl owl = new Owl(12, 1.3, Color.BLACK,  continent,"female");
+        owl.makeVoice("kuu -"+ " kuuku",5);
+        System.out.println(owl.printInfo());
 
-        Barnowl barnowl1 = new Barnowl(11,0.45,Color.BLUE);
-        barnowl1.makeVoice("ku kuuu",2);
-        barnowl1.makeVoice("kukukku kuuu");
-        System.out.println(barnowl1.printInfo()+"\n");
 
-        Barnowl barnowl2 = new Barnowl(7,0.47,Color.GREEN);
-        barnowl2.makeVoice("zzzku",1);
-        barnowl2.makeVoice("kuuuuuuuuuu");
-        System.out.println(barnowl2.printInfo());
+        Barnowl barnowl = new Barnowl(6,2.1,Color.BLUE,continent1,"female");
+        barnowl.makeVoice("kuu");
+        System.out.println(barnowl.printInfo());
+
+        Barnowl barnowl1 = new Barnowl(3,0.45,Color.GREEN,continent3,"male");
+        barnowl1.makeVoice("zkuuu",2);
+        System.out.println(barnowl1.printInfo());
     }
-
-
 }
