@@ -6,7 +6,7 @@ public class Bird {
     private Color color;
     private Continent continent;
 
-    public Bird(int age, double growth, Color color,  Continent continent) {
+    public Bird(int age, double growth, Color color, Continent continent) {
         this.age = age;
         this.growth = growth;
         this.color = color;

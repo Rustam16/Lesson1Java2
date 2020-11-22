@@ -12,6 +12,8 @@ public class Owl extends Bird {
         super(age, growth, color,continent);
         this.owlGender = owlGender;
 
+
+
     }
     public String getOwlGender() {
         return owlGender;
@@ -32,6 +34,7 @@ public class Owl extends Bird {
                 + super.getColor()+", Continent = "+getContinent().getContinentName()+
                 ", continent Terrain ="+getContinent().getContinentTerrain() + ", Gender = "+ getOwlGender());
     }
+
 
 
 }

@@ -19,5 +19,11 @@ public class Main {
         Barnowl barnowl1 = new Barnowl(3,0.45,Color.GREEN,continent3,"male");
         barnowl1.makeVoice("zkuuu",2);
         System.out.println(barnowl1.printInfo());
+
+
+        barnowl1.copy(barnowl1);
+        System.out.println(barnowl.printInfo());
+
     }
+
 }
